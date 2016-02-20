@@ -3,7 +3,7 @@
 This is the sample application for the purpose of pratice of Ruby on Rails
 by [Zixuan(Kevin) Fan](http://www.kfaninc.com/).
 
-Functions include:
+Features include:
 
 1. Gravitar
 2. User sign-up 
