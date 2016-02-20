@@ -1,10 +1,11 @@
 # A Ruby on Rails Practice: Sample twitter website
 
 This is the sample application for the purpose of pratice of Ruby on Rails
-by [Zixuan(Kevin) Fan](http://www.kfaninc.com/).
+by [Zixuan(Kevin) Fan](http://www.kfaninc.com/). The sample webiste is deployed at [Heroku](https://kfantwitter.herokuapp.com)
 
 Features include:
 
+0. SSL
 1. Gravitar
 2. User sign-up 
 3. Log in/out
