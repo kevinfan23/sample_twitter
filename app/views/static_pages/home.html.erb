@@ -1,14 +1,39 @@
-<div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag "home", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
 
-  <h2>
-    This is the home page for the
-    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+<div class="main-stream">
+	<div class="center-jumbotron">
+		<div class="center-jumbotron-container">
+			<div class="navbar">
+				<%= link_to image_tag("Twitter_logo_white.png", width: "31", alt: "Twitter logo"), root_path, id: "logo" %>
+				<nav>
+					<ul class="nav navbar-nav navbar-right">
+						<li><%= link_to "Sign up", signup_path, class: "btn-primary" %></li>
+						<li><%= link_to "Log in", '#', class: "btn-primary", id: "btn-active" %></li>
+					</ul>
+				</nav>
+			</div>
+		
+			<div class="home-feature">
+			<h2>See what’s happening right now.</h2>
+			<p>Find community, conversation and inspiration about the things you love.</p>
+			</div>
+		</div>
+	</div>
 </div>
+
 
 <%= link_to image_tag("rails.png", alt: "Rails logo"),
             'http://rubyonrails.org/' %>
+            
+  </body>
+</html>

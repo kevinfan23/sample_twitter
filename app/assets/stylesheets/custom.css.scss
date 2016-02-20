@@ -21,10 +21,20 @@ $gray-medium-light: #eaeaea;
   @include box_sizing;
 }
 
+/* fonts */
+@font-face {
+	font-family: "Rosetta Icon Regular";
+	src: url(assets/fonts/rosetta-icons-Regular.eot);
+	src: url(assets/fonts/rosetta-icons-Regular.woff);
+	src: url(assets/fonts/rosetta-icons-Regular.ttf);
+}
+
 /* universal */
 
 body {
   padding-top: 60px;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
 }
 
 section {
@@ -112,11 +122,11 @@ aside {
 #logo {
   float: left;
   margin-right: 10px;
+  margin-top: 5px;
   font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
   
   &:hover {
@@ -124,6 +134,17 @@ aside {
     text-decoration: none;
   }
 }
+
+/* nav bar */
+.navbar {
+	background-image: image-url("home-stream.png");
+	width: 100%;
+	background-size: 100%;
+	border: none;
+	padding: none;
+	margin: 0;
+}
+
 
 /* forms */
 

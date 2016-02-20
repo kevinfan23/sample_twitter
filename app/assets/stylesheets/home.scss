@@ -1,0 +1,105 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* fonts */
+@font-face {
+	font-family: 'Rosetta Icon Regular';
+	src: url(assets/fonts/rosetta-icons-Regular.eot);
+	src: url(assets/fonts/rosetta-icons-Regular.woff);
+	src: url(assets/fonts/rosetta-icons-Regular.ttf);
+}
+
+/* main stream */
+.main-stream {
+	height: 270px;
+}
+.center-jumbotron {
+	height: 210px;
+	background-image: image-url("home-stream.png");
+	background-size: 100%;
+	text-align: center;
+}
+
+center-jumbotron-container {
+	width: 100%;
+	padding: none;
+}
+
+.center-jumbotron h2 {
+	font-family: "Helvetica Neue";
+	font-size: 32px;
+	font-weight: 200;
+	line-height: 48px;
+	color: #ffffff;
+	margin-top: -10px;
+	margin-bottom: -5px;
+}
+
+.center-jumbotron p {
+	font-family: "Helvetica Neue";
+	font-size: 21px;
+	font-weight: 200;
+	line-height: 28px;
+	color: #ffffff;
+	opacity: .7;
+}
+
+/* header */
+.navbar {
+	padding-top: 20px;
+	width: 95%;
+	margin-left: 25px;
+}
+
+.navbar .btn-primary {
+	background: transparent;
+	border-radius: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	font-size: 16px;
+	font-weight: 200;
+	padding: 10px 35px
+}
+
+#btn-active {
+	background: rgba(255, 255, 255, 0.3);
+	border: 1px solid transparent;
+}
+
+#btn-active:hover {
+	background-color: #ffffff;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.navbar-nav ul {
+	margin-right: 40px;
+}
+
+.navbar-nav li {
+	list-style: none;
+	padding-right: 10px;
+}
+
+.navbar-nav li a {
+	padding: 0 10px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.navbar-nav li a:hover {
+	text-decoration: none;
+	color: #1da1f2;
+}
